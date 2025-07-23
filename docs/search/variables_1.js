@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['begindone_0',['beginDone',['../class_easy_c.html#a2f55de657a84e73edda23dae91d30436',1,'EasyC']]]
+  ['allowhightemps_0',['allowHighTemps',['../class_b_m_e688.html#a6538e878dfad23f2c37741ba70d12a9b',1,'BME688']]]
 ];

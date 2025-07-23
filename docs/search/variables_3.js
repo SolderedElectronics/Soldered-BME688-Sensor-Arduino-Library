@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['err_0',['err',['../class_easy_c.html#a8b880d5daf116adde0cc436f1e4c0853',1,'EasyC']]]
+  ['g_5ffine_0',['g_fine',['../class_b_m_e688.html#ae328f11d590347a04e87b56319182d98',1,'BME688']]],
+  ['g_5fres_1',['g_res',['../class_b_m_e688.html#acf33eefe1f9d821f4c3b55fa0d778de8',1,'BME688']]]
 ];

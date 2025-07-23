@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['native_0',['native',['../class_easy_c.html#abb766b60f26778dbc64e8792fd754729',1,'EasyC']]],
-  ['naziv_20proizvoda_20arduino_20library_1',['NAZIV PROIZVODA Arduino library',['../index.html',1,'']]]
+  ['measprofile_0',['measProfile',['../class_b_m_e688.html#ac0104a4bee32a72a7715b267c59f88a5',1,'BME688']]],
+  ['mode_1',['mode',['../class_b_m_e688.html#a2c2efda8167a95c4290e9689988258f9',1,'BME688']]]
 ];

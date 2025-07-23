@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['native_0',['native',['../class_easy_c.html#abb766b60f26778dbc64e8792fd754729',1,'EasyC']]]
+  ['h_5ffine_0',['h_fine',['../class_b_m_e688.html#a8bd666b86fa5470beb85ff4a4e076c07',1,'BME688']]],
+  ['hum_5foss_1',['hum_oss',['../class_b_m_e688.html#a2914d121ade24ed69c7f04959f31a1e6',1,'BME688']]]
 ];

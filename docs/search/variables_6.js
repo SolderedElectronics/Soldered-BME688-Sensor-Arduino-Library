@@ -14,7 +14,5 @@ var searchData=
   ['par_5ft16_11',['par_t16',['../class_b_m_e688.html#a0ae0469bbc21b65044c1b4dee5389c14',1,'BME688']]],
   ['par_5ft3_12',['par_t3',['../class_b_m_e688.html#a7ea25f78b33a5aab579bd73de786320b',1,'BME688']]],
   ['press_5foss_13',['press_oss',['../class_b_m_e688.html#aab53f74c557fcda9de138ff0da439abb',1,'BME688']]],
-  ['printlog_14',['printLog',['../class_b_m_e688.html#a4d226c149be25de334206c5b81324f6a',1,'BME688']]],
-  ['printlogs_15',['printLogs',['../class_b_m_e688.html#ae1321874f9da5e0f7e290a90b67c7f72',1,'BME688']]],
-  ['proizvoda_20arduino_20library_16',['NAZIV PROIZVODA Arduino library',['../index.html',1,'']]]
+  ['printlogs_14',['printLogs',['../class_b_m_e688.html#ae1321874f9da5e0f7e290a90b67c7f72',1,'BME688']]]
 ];
