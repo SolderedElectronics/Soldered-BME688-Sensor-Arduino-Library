@@ -16,14 +16,16 @@
 
 /**
  * @brief Constructor for BME688 sensor interface
- * 
+ *
  * @param address I2C address of the sensor
  */
-BME688::BME688(uint8_t address) : _address(address) {}
+BME688::BME688(uint8_t address) : _address(address)
+{
+}
 
 /**
  * @brief Initialize the sensor with default settings
- * 
+ *
  * @return true if initialization succeeded, false otherwise
  */
 bool BME688::begin()
@@ -43,7 +45,7 @@ bool BME688::begin()
 
 /**
  * @brief Initialize the sensor with specified operation mode
- * 
+ *
  * @param mode Operation mode (BME_688_SLEEP_MODE to BME_688_PARALLEL_MODE)
  * @return true if initialization succeeded, false otherwise
  */
@@ -72,7 +74,7 @@ bool BME688::begin(uint8_t mode)
 
 /**
  * @brief Initialize the sensor with specified operation mode and oversampling
- * 
+ *
  * @param mode Operation mode (BME_688_SLEEP_MODE to BME_688_PARALLEL_MODE)
  * @param oss Oversampling setting (BME_688_OSS_0 to BME_688_OSS_16)
  * @return true if initialization succeeded, false otherwise
@@ -102,7 +104,7 @@ bool BME688::begin(uint8_t mode, uint8_t oss)
 
 /**
  * @brief Print log messages to serial if enabled
- * 
+ *
  * @param log Message to print
  */
 void BME688::printLog(String log)
@@ -113,7 +115,7 @@ void BME688::printLog(String log)
 
 /**
  * @brief Enable or disable logging
- * 
+ *
  * @param show true to enable logging, false to disable
  */
 void BME688::showLogs(bool show)
@@ -148,16 +150,13 @@ void BME688::readCalibParams()
     // Read humidity calibration parameters
     if (!(i2c_read_Xbit_LE(BME_688_HUM_CALIB1_REG, &par_h16[0], 12) &&
           i2c_read_Xbit(BME_688_HUM_CALIB2_REG, &par_h16[1], 12) &&
-          i2c_readByte(BME_688_HUM_CALIB3_REG, &par_h8[0], 1) &&
-          i2c_readByte(BME_688_HUM_CALIB4_REG, &par_h8[1], 1) &&
-          i2c_readByte(BME_688_HUM_CALIB5_REG, &par_h8[2], 1) &&
-          i2c_readByte(BME_688_HUM_CALIB6_REG, &par_h6, 1) &&
+          i2c_readByte(BME_688_HUM_CALIB3_REG, &par_h8[0], 1) && i2c_readByte(BME_688_HUM_CALIB4_REG, &par_h8[1], 1) &&
+          i2c_readByte(BME_688_HUM_CALIB5_REG, &par_h8[2], 1) && i2c_readByte(BME_688_HUM_CALIB6_REG, &par_h6, 1) &&
           i2c_readByte(BME_688_HUM_CALIB7_REG, &par_h8[4], 1)))
         printLog(BME_688_HUM_CAL_EXCEPT);
 
     // Read gas calibration parameters
-    if (!(i2c_readByte(BME_688_GAS_CALIB1_REG, &par_g1, 1) &&
-          i2c_read_Xbit_LE(BME_688_GAS_CALIB2_REG, &par_g2, 16) &&
+    if (!(i2c_readByte(BME_688_GAS_CALIB1_REG, &par_g1, 1) && i2c_read_Xbit_LE(BME_688_GAS_CALIB2_REG, &par_g2, 16) &&
           i2c_readByte(BME_688_GAS_CALIB3_REG, &par_g3, 1) &&
           i2c_readByte(BME_688_GAS_HEAT_RANGE_REG, &res_heat_range, 1) &&
           i2c_readByte(BME_688_GAS_HEAT_VAL_REG, &res_heat_val, 1)))
@@ -168,7 +167,7 @@ void BME688::readCalibParams()
 
 /**
  * @brief Set heating profiles for gas measurements
- * 
+ *
  * @return true if successful
  */
 bool BME688::setHeatProfiles()
@@ -186,7 +185,7 @@ bool BME688::setHeatProfiles()
 
 /**
  * @brief Check if sensor is connected
- * 
+ *
  * @return true if sensor is connected and responds with correct chip ID
  */
 bool BME688::isConnected()
@@ -199,7 +198,7 @@ bool BME688::isConnected()
 
 /**
  * @brief Set temperature oversampling
- * 
+ *
  * @param oss Oversampling setting (BME_688_OSS_0 to BME_688_OSS_16)
  * @return true if setting was valid and applied
  */
@@ -217,7 +216,7 @@ bool BME688::setTemperatureOversampling(uint8_t oss)
 
 /**
  * @brief Read raw temperature value from sensor
- * 
+ *
  * @return int32_t Raw temperature value
  */
 int32_t BME688::readRawTemp()
@@ -230,7 +229,7 @@ int32_t BME688::readRawTemp()
 
 /**
  * @brief Read raw pressure value from sensor
- * 
+ *
  * @return int32_t Raw pressure value
  */
 int32_t BME688::readRawPres()
@@ -243,7 +242,7 @@ int32_t BME688::readRawPres()
 
 /**
  * @brief Read raw humidity value from sensor
- * 
+ *
  * @return int16_t Raw humidity value
  */
 int16_t BME688::readRawHum()
@@ -256,7 +255,7 @@ int16_t BME688::readRawHum()
 
 /**
  * @brief Read raw gas resistance value from sensor
- * 
+ *
  * @return int16_t Raw gas resistance value
  */
 int16_t BME688::readRawGas()
@@ -269,7 +268,7 @@ int16_t BME688::readRawGas()
 
 /**
  * @brief Convert raw temperature ADC value to degrees Celsius
- * 
+ *
  * @param adc_T Raw temperature value
  * @return double Temperature in °C
  */
@@ -286,7 +285,7 @@ double BME688::readUCTemp(int32_t adc_T)
 
 /**
  * @brief Convert raw pressure ADC value to Pascals
- * 
+ *
  * @param adc_P Raw pressure value
  * @return double Pressure in Pa
  */
@@ -312,7 +311,7 @@ double BME688::readUCPres(int32_t adc_P)
 
 /**
  * @brief Convert raw humidity ADC value to percentage
- * 
+ *
  * @param adc_H Raw humidity value
  * @return double Relative humidity in %
  */
@@ -322,9 +321,8 @@ double BME688::readUCHum(int16_t adc_H)
     double var1 = 0, var2 = 0, var3 = 0, var4 = 0;
 
     var1 = adc_H - (((double)par_h16[0] * 16.0) + (((double)par_h8[0] / 2.0) * t_fine));
-    var2 = var1 * (((double)par_h16[1] / 262144.0) *
-                   (1.0 + (((double)par_h8[1] / 16384.0) * t_fine) +
-                    (((double)par_h8[2] / 1048576.0) * t_fine * t_fine)));
+    var2 = var1 * (((double)par_h16[1] / 262144.0) * (1.0 + (((double)par_h8[1] / 16384.0) * t_fine) +
+                                                      (((double)par_h8[2] / 1048576.0) * t_fine * t_fine)));
     var3 = (double)par_h6 / 16384.0;
     var4 = (double)par_h8[4] / 2097152.0;
     h_fine = var2 + ((var3 + (var4 * t_fine)) * var2 * var2);
@@ -333,7 +331,7 @@ double BME688::readUCHum(int16_t adc_H)
 
 /**
  * @brief Calculate gas heater temperature for target temperature
- * 
+ *
  * @param target_temp Target temperature in °C
  * @return uint8_t Calculated heater temperature
  */
@@ -347,13 +345,15 @@ uint8_t BME688::readUCGas(uint16_t target_temp)
     var3 = (double)par_g3 / 1024.0;
     var4 = var1 * (1.0 + (var2 * (double)target_temp));
     var5 = var4 + (var3 * (double)t_fine);
-    g_fine = (uint8_t)(3.4 * ((var5 * (4.0 / (4.0 + (double)((res_heat_range & BME_688_HEAT_RANGE_MASK) >> 4))) * (1.0 / (1.0 + ((double)res_heat_val * 0.002)))) - 25));
+    g_fine = (uint8_t)(3.4 * ((var5 * (4.0 / (4.0 + (double)((res_heat_range & BME_688_HEAT_RANGE_MASK) >> 4))) *
+                               (1.0 / (1.0 + ((double)res_heat_val * 0.002)))) -
+                              25));
     return g_fine;
 }
 
 /**
  * @brief Check if gas measurement is complete
- * 
+ *
  * @return true if gas measurement is finished
  */
 bool BME688::checkGasMeasurementCompletion()
@@ -366,7 +366,7 @@ bool BME688::checkGasMeasurementCompletion()
 
 /**
  * @brief Read temperature from sensor
- * 
+ *
  * @return double Temperature in °C
  */
 double BME688::readTemperature()
@@ -378,7 +378,7 @@ double BME688::readTemperature()
 
 /**
  * @brief Read pressure from sensor
- * 
+ *
  * @return double Pressure in Pa
  */
 double BME688::readPressure()
@@ -391,7 +391,7 @@ double BME688::readPressure()
 
 /**
  * @brief Read humidity from sensor
- * 
+ *
  * @return double Relative humidity in %
  */
 double BME688::readHumidity()
@@ -404,7 +404,7 @@ double BME688::readHumidity()
 
 /**
  * @brief Read gas resistance for specific temperature
- * 
+ *
  * @param temperature Target temperature in °C
  * @return double Gas resistance in ohms or -1 if error
  */
@@ -432,7 +432,7 @@ double BME688::readGasForTemperature(uint16_t temperature)
 
 /**
  * @brief Read gas resistance using specified profile
- * 
+ *
  * @param profile Profile number (0-9)
  * @return double Gas resistance in ohms or -1 if error
  */
@@ -447,7 +447,7 @@ double BME688::readGas(uint8_t profile)
 
 /**
  * @brief Start gas measurement and read results
- * 
+ *
  * @param profile Profile number to use
  * @param waitTime Time to wait for measurement in ms
  * @return double Gas resistance in ohms or error code
@@ -481,7 +481,7 @@ double BME688::startGasMeasurement(uint8_t profile, uint8_t waitTime)
 
 /**
  * @brief Enable/disable warnings for unsafe temperatures
- * 
+ *
  * @param ignore true to ignore warnings, false to enable them
  */
 void BME688::ignoreUnsafeTemperatureWarnings(bool ignore)
@@ -494,7 +494,7 @@ void BME688::ignoreUnsafeTemperatureWarnings(bool ignore)
 
 /**
  * @brief Write single byte to I2C register
- * 
+ *
  * @param reg Register address
  * @param data Data to write
  */
@@ -508,7 +508,7 @@ void BME688::i2c_execute(uint8_t reg, uint8_t data)
 
 /**
  * @brief Write 16-bit value to I2C register
- * 
+ *
  * @param reg Register address
  * @param data 16-bit data to write
  */
@@ -523,7 +523,7 @@ void BME688::i2c_execute_16bit(uint8_t reg, uint16_t data)
 
 /**
  * @brief Read bytes from I2C register (unsigned)
- * 
+ *
  * @param reg Register address
  * @param data Buffer to store read data
  * @param length Number of bytes to read
@@ -542,7 +542,7 @@ bool BME688::i2c_readByte(uint8_t reg, uint8_t *const data, uint8_t length)
 
 /**
  * @brief Read bytes from I2C register (signed)
- * 
+ *
  * @param reg Register address
  * @param data Buffer to store read data
  * @param length Number of bytes to read
@@ -561,7 +561,7 @@ bool BME688::i2c_readByte(uint8_t reg, int8_t *const data, uint8_t length)
 
 /**
  * @brief Start I2C transmission for reading
- * 
+ *
  * @param reg Register address to read from
  */
 void BME688::startTransmission(uint8_t reg)
@@ -573,7 +573,7 @@ void BME688::startTransmission(uint8_t reg)
 
 /**
  * @brief Check if sensor is connected to I2C bus
- * 
+ *
  * @return true if sensor responds
  */
 bool BME688::is_sensor_connected()
@@ -586,15 +586,14 @@ bool BME688::is_sensor_connected()
 
 /**
  * @brief Read X bits from register (little-endian)
- * 
+ *
  * @tparam T Data type for result
  * @param reg Register address
  * @param data Pointer to store result
  * @param length Number of bits to read
  * @return true if read succeeded
  */
-template <typename T>
-bool BME688::i2c_read_Xbit_LE(uint8_t reg, T *const data, uint8_t length)
+template <typename T> bool BME688::i2c_read_Xbit_LE(uint8_t reg, T *const data, uint8_t length)
 {
     uint8_t l = length % 8 ? (length + (8 - length % 8)) / 8 : length / 8;
     startTransmission(reg);
@@ -617,15 +616,14 @@ bool BME688::i2c_read_Xbit_LE(uint8_t reg, T *const data, uint8_t length)
 
 /**
  * @brief Read X bits from register (big-endian)
- * 
+ *
  * @tparam T Data type for result
  * @param reg Register address
  * @param data Pointer to store result
  * @param length Number of bits to read
  * @return true if read succeeded
  */
-template <typename T>
-bool BME688::i2c_read_Xbit(uint8_t reg, T *const data, uint8_t length)
+template <typename T> bool BME688::i2c_read_Xbit(uint8_t reg, T *const data, uint8_t length)
 {
     uint8_t l = length % 8 ? (length + (8 - length % 8)) / 8 : length / 8;
     startTransmission(reg);
