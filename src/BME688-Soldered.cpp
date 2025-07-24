@@ -385,8 +385,7 @@ double BME688::readPressure()
 {
     i2c_execute(BME_688_CTRL_MEAS_REG, temp_oss << 5 | press_oss << 2 | mode);
     delay(10);
-    float ps = readUCPres(readRawPres()) * cf_p;
-    cf_p = BME_688_GAS_CORRECTION_NIL;
+    float ps = readUCPres(readRawPres());
     return ps;
 }
 
