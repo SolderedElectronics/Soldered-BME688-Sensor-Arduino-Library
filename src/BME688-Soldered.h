@@ -184,7 +184,7 @@
 #define BME_688_TEMP_WARNING                                                                                           \
     "Warning: Higher temperatures will degrade the lifespan of the sensor. \nThis operation has been automatically "   \
     "denied for safety. \nIf you still wish to use high temperatures, call "                                           \
-    "ignoreUnsafeTemperatureWarnings(false)\nIn safe mode, Temperature limit is 425°C. Bypassing this protection "    \
+    "ignoreUnsafeTemperatureWarnings(false)\nIn safe mode, Temperature limit is 425°C. Bypassing this protection "     \
     "will raise the limit to 600°C."
 #define BME_688_TEMP_EXCEED_MAX_LIMIT "Exception: Operation blocked. The temperature value exceeds maximum limit."
 #define BME_688_PROFILE_OUT_OF_RANGE  "Exception: Operation blocked. Profile value should be between 0 and 9."

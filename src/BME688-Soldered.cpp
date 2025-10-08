@@ -215,6 +215,40 @@ bool BME688::setTemperatureOversampling(uint8_t oss)
 }
 
 /**
+ * @brief Sets the pressure oversampling setting.
+ * @param oss Oversampling setting value.
+ * @return True if the setting was applied successfully, false otherwise.
+ */
+bool BME688::setPressureOversampling(uint8_t oss)
+{
+    if (oss <= BME_688_OSS_16)
+        press_oss = oss;
+    else
+    {
+        printLog(BME_688_VALUE_INVALID);
+        return false;
+    }
+    return true;
+}
+
+/**
+ * @brief Sets the humidity oversampling setting.
+ * @param oss Oversampling setting value.
+ * @return True if the setting was applied successfully, false otherwise.
+ */
+bool BME688::setHumidityOversampling(uint8_t oss)
+{
+    if (oss <= BME_688_OSS_16)
+        hum_oss = oss;
+    else
+    {
+        printLog(BME_688_VALUE_INVALID);
+        return false;
+    }
+    return true;
+}
+
+/**
  * @brief Read raw temperature value from sensor
  *
  * @return int32_t Raw temperature value
