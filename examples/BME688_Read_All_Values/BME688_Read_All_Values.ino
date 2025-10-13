@@ -13,7 +13,7 @@
  ***************************************************/
 #include "BME688-Soldered.h"  // Include the BME688 library
 
-BME688 sensor;  // Create an instance of the BME688 sensor object
+BME688 bme;  // Create an instance of the BME688 sensor object
 
 BME688Data data; // Create an instance of the class which stores data recorded by the sensor
 
