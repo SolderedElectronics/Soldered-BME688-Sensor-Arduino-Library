@@ -10,5 +10,5 @@
  * @date        Last modified: 2025-07-23
  ***************************************************/
 
-#include <BME688-Soldered.h>
 #include "libs/Bosch-BME68x-Library/bme68xLibrary.h"
+#include <BME688-Soldered.h>
