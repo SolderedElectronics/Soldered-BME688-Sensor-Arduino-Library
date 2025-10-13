@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['library_0',['NAZIV PROIZVODA Arduino library',['../index.html',1,'']]],
-  ['license_1',['Open-source license',['../index.html#autotoc_md7',1,'']]]
+  ['mode_0',['Operation mode',['../group__bme68x_api_om.html',1,'']]]
 ];

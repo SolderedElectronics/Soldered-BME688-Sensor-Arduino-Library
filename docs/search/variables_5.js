@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['measprofile_0',['measProfile',['../class_b_m_e688.html#ac0104a4bee32a72a7715b267c59f88a5',1,'BME688']]],
-  ['mode_1',['mode',['../class_b_m_e688.html#a2c2efda8167a95c4290e9689988258f9',1,'BME688']]]
+  ['nfields_0',['nFields',['../class_bme68x.html#a75132113c7977e8fa333c3ad81e04b8c',1,'Bme68x']]]
 ];

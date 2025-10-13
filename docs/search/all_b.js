@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['naziv_20proizvoda_20arduino_20library_0',['NAZIV PROIZVODA Arduino library',['../index.html',1,'']]]
+  ['open_20source_20license_0',['Open-source license',['../index.html#autotoc_md7',1,'']]],
+  ['operation_20mode_1',['Operation mode',['../group__bme68x_api_om.html',1,'']]],
+  ['original_20source_2',['Original source',['../index.html#autotoc_md6',1,'']]],
+  ['out_3',['Data Read out',['../group__bme68x_api_data.html',1,'']]],
+  ['overview_4',['Sensor Overview',['..//github/workspace/gh-pages/src/libs/Bosch-BME68x-Library/bme68x/README.md#autotoc_md10',1,'']]]
 ];

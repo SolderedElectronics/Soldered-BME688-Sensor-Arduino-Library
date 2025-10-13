@@ -1,11 +1,12 @@
 var searchData=
 [
-  ['i2c_5fexecute_0',['i2c_execute',['../class_b_m_e688.html#a8198f1b5ab58e265f8d31be3ac07b802',1,'BME688']]],
-  ['i2c_5fexecute_5f16bit_1',['i2c_execute_16bit',['../class_b_m_e688.html#a3fa77bca9d2ad960d80c10a65d860eca',1,'BME688']]],
-  ['i2c_5fread_5fxbit_2',['i2c_read_Xbit',['../class_b_m_e688.html#ac943a83b9276f18140ce126d1d5a3255',1,'BME688']]],
-  ['i2c_5fread_5fxbit_5fle_3',['i2c_read_Xbit_LE',['../class_b_m_e688.html#a8629623b6bd38d372adf4e9732c44674',1,'BME688']]],
-  ['i2c_5freadbyte_4',['i2c_readByte',['../class_b_m_e688.html#a903a1df4faff93c739aa4e55350b6275',1,'BME688::i2c_readByte(uint8_t reg, uint8_t *const data, uint8_t length=1)'],['../class_b_m_e688.html#a3776962f752a30bc9de2554e2586349d',1,'BME688::i2c_readByte(uint8_t reg, int8_t *const data, uint8_t length=1)']]],
-  ['ignoreunsafetemperaturewarnings_5',['ignoreUnsafeTemperatureWarnings',['../class_b_m_e688.html#afde51c6156c4d840cc5024add9a85328',1,'BME688']]],
-  ['is_5fsensor_5fconnected_6',['is_sensor_connected',['../class_b_m_e688.html#a8bad36a2e22f4156a4920870e75e2350',1,'BME688']]],
-  ['isconnected_7',['isConnected',['../class_b_m_e688.html#ae616565cb84866138cd7a9798b31c041',1,'BME688']]]
+  ['calc_5fgas_5fresistance_5fhigh_0',['calc_gas_resistance_high',['../bme68x_8c.html#a1557b89f7d56fabae3cf849c70d4cef3',1,'bme68x.c']]],
+  ['calc_5fgas_5fresistance_5flow_1',['calc_gas_resistance_low',['../bme68x_8c.html#a058d07a0fdd5d6ccb039496a45c3a708',1,'bme68x.c']]],
+  ['calc_5fgas_5fwait_2',['calc_gas_wait',['../bme68x_8c.html#a6c84f9229693d28f3561432f32f1cbc3',1,'bme68x.c']]],
+  ['calc_5fheatr_5fdur_5fshared_3',['calc_heatr_dur_shared',['../bme68x_8c.html#a866f815c6562045b1c15252251a63835',1,'bme68x.c']]],
+  ['calc_5fhumidity_4',['calc_humidity',['../bme68x_8c.html#a11abb50445f242f425ec4764c7052efb',1,'bme68x.c']]],
+  ['calc_5fpressure_5',['calc_pressure',['../bme68x_8c.html#a87e09c57e2e579c132c633b239e45f76',1,'bme68x.c']]],
+  ['calc_5fres_5fheat_6',['calc_res_heat',['../bme68x_8c.html#a4e8e84f2f798a808dfa8108008127451',1,'bme68x.c']]],
+  ['calc_5ftemperature_7',['calc_temperature',['../bme68x_8c.html#a18985ae1d4ed671a783eb6d89117be81',1,'bme68x.c']]],
+  ['checkstatus_8',['checkStatus',['../class_bme68x.html#a6e5cd25f00a255cf86b0ecaa9fe187d6',1,'Bme68x']]]
 ];

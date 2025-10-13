@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['h_5ffine_0',['h_fine',['../class_b_m_e688.html#a8bd666b86fa5470beb85ff4a4e076c07',1,'BME688']]],
-  ['hardware_20design_1',['Hardware design',['../index.html#autotoc_md2',1,'']]],
-  ['have_20fun_2',['Have fun!',['../index.html#autotoc_md8',1,'']]],
-  ['hum_5foss_3',['hum_oss',['../class_b_m_e688.html#a2914d121ade24ed69c7f04959f31a1e6',1,'BME688']]]
+  ['i2c_0',['i2c',['../unionbme68x_scomm_t.html#a6b519743cd8790eb2daf91b5bacb66bd',1,'bme68xScommT']]],
+  ['i2caddr_1',['i2cAddr',['../unionbme68x_scomm_t.html#a31132e53497c46d5254a7eb1c04e732a',1,'bme68xScommT']]],
+  ['ifields_2',['iFields',['../class_bme68x.html#aae4f4cfb47a3c3929b3fd8ad99f29ea8',1,'Bme68x']]],
+  ['important_20links_3a_3',['Important links:',['..//github/workspace/gh-pages/src/libs/Bosch-BME68x-Library/bme68x/README.md#autotoc_md12',1,'']]],
+  ['initialization_4',['Initialization',['../group__bme68x_api_init.html',1,'']]],
+  ['intferror_5',['intfError',['../class_bme68x.html#a7f6f81ffb0dfe3e4e90ebee7eb70418f',1,'Bme68x']]]
 ];

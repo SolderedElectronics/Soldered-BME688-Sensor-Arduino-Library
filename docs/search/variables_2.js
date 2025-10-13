@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['cf_5fp_0',['cf_p',['../class_b_m_e688.html#ab73b234c354476977522c639c8aaec00',1,'BME688']]]
+  ['heatrconf_0',['heatrConf',['../class_bme68x.html#a949afbccf38e656d360eb8c98a84c8ea',1,'Bme68x']]]
 ];
