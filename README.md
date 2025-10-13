@@ -51,7 +51,7 @@ At Soldered, we design and manufacture a wide selection of electronic products t
 ### Original source
 
 ​
-This library is possible thanks to original [BME688](https://github.com/styropyr0/BME688) library. Thank you, styropyr0.
+This library is possible thanks to original [Bosch BME68x Library](https://github.com/boschsensortec/Bosch-BME68x-Library) library. Thank you, Bosch Sensortech.
 
 ### Open-source license
 

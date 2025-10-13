@@ -15,49 +15,55 @@
 
 BME688 sensor;  // Create an instance of the BME688 sensor object
 
-void setup() {
-    // Initialize serial communication at 115200 baud rate
-    Serial.begin(115200);
-    
-    // Wait for serial port to connect (needed for native USB)
-    while (!Serial) {
-        delay(10);
-    }
+BME688Data data; // Create an instance of the class which stores data recorded by the sensor
 
-    // Initialize the BME688 sensor
-    if (sensor.begin()) {
-        Serial.println("BME688 Initialized Successfully!");
-    } else {
-        Serial.println("Failed to initialize BME688!");
-        // Halt program execution if initialization fails
-        while (1);
-    }
+void setup(void)
+{
+    // Initialize serial so we can print to the monitor
+	Serial.begin(115200);
+	
+		
+	// Initialize the BME sensor via I2C at the default address
+	bme.begin();
+
+    // Check if the sensor initialization was successfull
+	if(bme.checkStatus())
+	{
+		if (bme.checkStatus() == BME68X_ERROR)
+		{
+			Serial.println("Sensor error:" + bme.statusString());
+			return;
+		}
+		else if (bme.checkStatus() == BME68X_WARNING)
+		{
+			Serial.println("Sensor Warning:" + bme.statusString());
+		}
+	}
+	
+	// Set the default configuration for temperature, pressure and humidity 
+	bme.setTPH();
+
+	// Set the heater configuration to 300 deg C for 100ms for Forced mode 
+	bme.setHeaterProf(300, 100);
+
+	Serial.println("TimeStamp(ms), Temperature(deg C), Pressure(Pa), Humidity(%), Gas resistance(ohm), Status");
 }
 
-void loop() {
-    // Read and display temperature
-    Serial.print("Temperature: ");
-    Serial.print(sensor.readTemperature());  // Read temperature in °C
-    Serial.println(" °C");
+void loop(void)
+{
+    //Set the BME into forced operating mode
+	bme.setOpMode(BME68X_FORCED_MODE);
+	delayMicroseconds(bme.getMeasDur());
 
-    // Read and display pressure
-    Serial.print("Pressure: ");
-    Serial.print(sensor.readPressure());  // Read pressure in Pascals
-    Serial.println(" Pa");
-
-    // Read and display humidity
-    Serial.print("Humidity: ");
-    Serial.print(sensor.readHumidity());  // Read relative humidity in %
-    Serial.println(" %");
-
-    // Read and display gas resistance (using profile 0)
-    Serial.print("Gas Resistance: ");
-    Serial.print(sensor.readGas(0));  // Read gas resistance in ohms
-    Serial.println(" Ω");
-
-    // Add a separator line between readings
-    Serial.println("-----------------------");
-
-    // Wait 2 seconds before next reading
-    delay(2000);
+    // See if there's data available from the sensor
+	if (bme.fetchData())
+	{
+		bme.getData(data);
+		Serial.print(String(millis()) + ", ");
+		Serial.print(String(data.temperature) + ", ");
+		Serial.print(String(data.pressure) + ", ");
+		Serial.print(String(data.humidity) + ", ");
+		Serial.print(String(data.gas_resistance) + ", ");
+		Serial.println(data.status, HEX);
+	}
 }
