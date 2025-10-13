@@ -109,20 +109,20 @@ $(function(){initNavTree('_b_m_e688-_soldered_8h_source.html',''); initResizable
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#define BME688_SOLDERED_H</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;Arduino.h&quot;</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="bme68x_library_8h.html">libs/Bosch-BME68x-Library/bme68xLibrary.h</a>&quot;</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="bme68x__defs_8h.html">libs/Bosch-BME68x-Library/bme68x/bme68x_defs.h</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="bme68x__defs_8h.html">libs/Bosch-BME68x-Library/bme68x/bme68x_defs.h</a>&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="bme68x_library_8h.html">libs/Bosch-BME68x-Library/bme68xLibrary.h</a>&quot;</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;Wire.h&gt;</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="foldopen" id="foldopen00021" data-start="{" data-end="};">
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_b_m_e688.html">   21</a></span><span class="keyword">class </span><a class="code hl_function" href="class_b_m_e688.html#a2c830bb656dc2857a00a5af3ddc7a7fb">BME688</a> : <span class="keyword">public</span> <a class="code hl_function" href="class_bme68x.html#a2d553c137024d62859934465431ced75">Bme68x</a></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_b_m_e688.html#a2c830bb656dc2857a00a5af3ddc7a7fb">   24</a></span>    <a class="code hl_function" href="class_b_m_e688.html#a2c830bb656dc2857a00a5af3ddc7a7fb">BME688</a>():<a class="code hl_function" href="class_bme68x.html#a2d553c137024d62859934465431ced75">Bme68x</a>(){};</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_b_m_e688.html#a2c830bb656dc2857a00a5af3ddc7a7fb">   24</a></span>    <a class="code hl_function" href="class_b_m_e688.html#a2c830bb656dc2857a00a5af3ddc7a7fb">BME688</a>() : <a class="code hl_function" href="class_bme68x.html#a2d553c137024d62859934465431ced75">Bme68x</a>() {};</div>
 <div class="foldopen" id="foldopen00025" data-start="{" data-end="}">
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_b_m_e688.html#a058acd9c57d7a7f5900fcb6b837c24f5">   25</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_b_m_e688.html#a058acd9c57d7a7f5900fcb6b837c24f5">begin</a>(uint8_t address=BME68X_I2C_ADDR_LOW, bme68x_delay_us_fptr_t idleTask = <a class="code hl_function" href="bme68x_library_8cpp.html#a6aece840972ea6927fdf6a6b8319bc4d">bme68xDelayUs</a>)</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_b_m_e688.html#a058acd9c57d7a7f5900fcb6b837c24f5">   25</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_b_m_e688.html#a058acd9c57d7a7f5900fcb6b837c24f5">begin</a>(uint8_t address = BME68X_I2C_ADDR_LOW, bme68x_delay_us_fptr_t idleTask = <a class="code hl_function" href="bme68x_library_8cpp.html#a6aece840972ea6927fdf6a6b8319bc4d">bme68xDelayUs</a>)</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    {</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>      Wire.begin();</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>      <a class="code hl_function" href="class_bme68x.html#ac041c00b0e2eac458c47cba05e3b4d8d">Bme68x::begin</a>(address, Wire, idleTask);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        Wire.begin();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <a class="code hl_function" href="class_bme68x.html#ac041c00b0e2eac458c47cba05e3b4d8d">Bme68x::begin</a>(address, Wire, idleTask);</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    }</div>
 </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>};</div>
@@ -130,7 +130,7 @@ $(function(){initNavTree('_b_m_e688-_soldered_8h_source.html',''); initResizable
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="foldopen" id="foldopen00032" data-start="{" data-end="};">
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_b_m_e688_data.html">   32</a></span><span class="keyword">class </span><a class="code hl_class" href="class_b_m_e688_data.html">BME688Data</a> : <span class="keyword">public</span> <a class="code hl_typedef" href="bme68x_library_8h.html#a706d29f6cc954c2d5f1ec1fa46a41a06">bme68xData</a></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>{  </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>{</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>};</div>
 </div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
@@ -152,7 +152,7 @@ $(function(){initNavTree('_b_m_e688-_soldered_8h_source.html',''); initResizable
     <ul>
         <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_b_m_e688-_soldered_8h.html">BME688-Soldered.h</a></li>
         <li class="footer">
-            Generated on Mon Oct 13 2025 08:57:40 for Soldered BME688 Environmental and Air Sensor by <a href="http://www.doxygen.org/index.html">
+            Generated on Mon Oct 13 2025 09:37:55 for Soldered BME688 Environmental and Air Sensor by <a href="http://www.doxygen.org/index.html">
                 <img class="footer" src="doxygen.png" alt="doxygen"
                     onerror="this.onerror=null;this.src='doxygen.svg';" /></a> 1.13.2.
             Dark theme by <a href="http://majerle.eu" target="_new">Tilen Majerle</a>. All rights reserved.
