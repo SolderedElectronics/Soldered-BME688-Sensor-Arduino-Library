@@ -2,10 +2,10 @@
  **************************************************
  * @file        BME688-Soldered.h
  * @brief       Header file for BME688 environmental sensor library
- *              (temperature, humidity, pressure, gas resistance)
+ *              All the logic is contained within the libs/folder
  *
  * @copyright   GNU General Public License v3.0
- * @authors     Original Author: Saurav Sajeev (https://github.com/styropyr0)
+ * @authors     Original Author: Bosch
  *              Modifications by: Josip Šimun Kuči @ Soldered.com
  * @date        Last modified: 2025-07-23
  ***************************************************/
