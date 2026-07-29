@@ -1,25 +1,5 @@
 var searchData=
 [
-  ['sensor_20overview_0',['Sensor Overview',['..//github/workspace/gh-pages/src/libs/Bosch-BME68x-Library/bme68x/README.md#autotoc_md10',1,'']]],
-  ['sensordata_1',['sensorData',['../class_bme68x.html#a74c489df32d1b0936901db4b250b8aa4',1,'Bme68x']]],
-  ['set_5fconf_2',['set_conf',['../bme68x_8c.html#ac1379b8d53a9a81e7d41cfb3afa5235e',1,'bme68x.c']]],
-  ['set_5fmem_5fpage_3',['set_mem_page',['../bme68x_8c.html#a7366b5f90449de99807f5f398536ce2d',1,'bme68x.c']]],
-  ['setambienttemp_4',['setAmbientTemp',['../class_bme68x.html#af5ff3f98ca95cb6269f325435273af6f',1,'Bme68x']]],
-  ['setfilter_5',['setFilter',['../class_bme68x.html#a1f56ee55792fe856f0d5e327b88842a0',1,'Bme68x']]],
-  ['setheaterprof_6',['setHeaterProf',['../class_bme68x.html#a7c4cffcab15adbdb4f55af2c9dd63add',1,'Bme68x::setHeaterProf(uint16_t temp, uint16_t dur)'],['../class_bme68x.html#a41d045d00ba9462342b6cfb4bfcabcaf',1,'Bme68x::setHeaterProf(uint16_t *temp, uint16_t *dur, uint8_t profileLen)'],['../class_bme68x.html#a46760c4d9fb43cf6895c79eadc3027ea',1,'Bme68x::setHeaterProf(uint16_t *temp, uint16_t *mul, uint16_t sharedHeatrDur, uint8_t profileLen)']]],
-  ['setopmode_7',['setOpMode',['../class_bme68x.html#a6ecac3c1855d684fb4874a0c7d90b174',1,'Bme68x']]],
-  ['setseqsleep_8',['setSeqSleep',['../class_bme68x.html#a874e12a5e254805b318efe05f09ec99a',1,'Bme68x']]],
-  ['settph_9',['setTPH',['../class_bme68x.html#a769290f9cd0e4d0d253be33108382ecf',1,'Bme68x']]],
-  ['softreset_10',['softReset',['../class_bme68x.html#a2821cc6d53d90b708790b767eed43cba',1,'Bme68x']]],
-  ['soldered_11',['About Soldered',['../index.html#autotoc_md5',1,'']]],
-  ['sort_5fsensor_5fdata_12',['sort_sensor_data',['../bme68x_8c.html#a3b0b2ff90365ab542899ae54fc8cc71c',1,'bme68x.c']]],
-  ['source_13',['Original source',['../index.html#autotoc_md6',1,'']]],
-  ['source_20license_14',['Open-source license',['../index.html#autotoc_md7',1,'']]],
-  ['spi_15',['spi',['../unionbme68x_scomm_t.html#a6bdc1821a7dbe6e8cbd32abc97870733',1,'bme68xScommT']]],
-  ['spiobj_16',['spiobj',['../unionbme68x_scomm_t.html#a680653fe7a082b00a889615496a1138d',1,'bme68xScommT']]],
-  ['src_2flibs_2fbosch_2dbme68x_2dlibrary_2fbme68x_2freadme_2emd_17',['README.md',['../src_2libs_2_bosch-_b_m_e68x-_library_2bme68x_2_r_e_a_d_m_e_8md.html',1,'']]],
-  ['status_18',['status',['../class_bme68x.html#ae78ba3fe9bf022a091fceeba7f4733d9',1,'Bme68x']]],
-  ['statusstring_19',['statusString',['../class_bme68x.html#aad842c8535222828a305894511ba5552',1,'Bme68x']]],
-  ['swap_5ffields_20',['swap_fields',['../bme68x_8c.html#a95d531420daedc8d74376f59713c579f',1,'bme68x.c']]],
-  ['system_21',['System',['../group__bme68x_api_system.html',1,'']]]
+  ['wireobj_0',['wireobj',['../unionbme68x_scomm_t.html#a7b2cb5335210afe12a9c114416812b0a',1,'bme68xScommT']]],
+  ['writereg_1',['writeReg',['../class_bme68x.html#a3d525c62cd75af9807748677ed572eee',1,'Bme68x::writeReg(uint8_t regAddr, uint8_t regData)'],['../class_bme68x.html#a0e24fb79e7d97b1e8dd5ba9446d92414',1,'Bme68x::writeReg(uint8_t *regAddr, const uint8_t *regData, uint32_t length)']]]
 ];

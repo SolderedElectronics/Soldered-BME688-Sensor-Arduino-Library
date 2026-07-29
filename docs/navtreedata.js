@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "Soldered BME688 Environmental and Air Sensor", "index.html", [
-    [ "NAZIV PROIZVODA Arduino library", "index.html", "index" ],
+    [ "Soldered BME688 Sensor Arduino library", "index.html", "index" ],
     [ "Topics", "topics.html", "topics" ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
@@ -53,5 +53,6 @@ var NAVTREEINDEX =
 "_b_m_e688-_soldered_8cpp.html"
 ];
 
-var SYNCONMSG = 'click to disable panel synchronization';
-var SYNCOFFMSG = 'click to enable panel synchronization';
+const SYNCONMSG = 'click to disable panel synchronization';
+const SYNCOFFMSG = 'click to enable panel synchronization';
+const LISTOFALLMEMBERS = 'List of all members';
