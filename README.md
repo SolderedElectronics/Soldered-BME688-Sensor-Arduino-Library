@@ -1,11 +1,11 @@
-# NAZIV PROIZVODA Arduino library
+# Soldered BME688 Sensor Arduino library
 
 [![Make docs and publish to GitHub Pages](https://github.com/SolderedElectronics/Soldered-Generic-Arduino-Library/actions/workflows/make_docs.yml/badge.svg?branch=dev)](https://github.com/SolderedElectronics/Soldered-Generic-Arduino-Library/actions/workflows/make_docs.yml)
 [![Arduino Library Manager Compatibility](https://github.com/SolderedElectronics/Soldered-Generic-Arduino-Library/actions/workflows/arduino_lint.yml/badge.svg?branch=dev)](https://github.com/SolderedElectronics/Soldered-Generic-Arduino-Library/actions/workflows/arduino_lint.yml)
 
-| ![Environmental & Air Quality Sensor BME688](https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg) |
+| ![Environmental & Air Quality Sensor BME688]([https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg](https://soldered.com/cdn/shop/files/333203_featured-photo_ce08e8_dbb5be5b-340a-49e7-a551-b315fa7f5576.jpg?v=1785227790&width=832)) |
 | :------------------------------------------------------------------------------------: |
-|                      [Environmental & Air Quality Sensor BME688](https://www.solde.red/SKU)                      |
+|                      [Environmental & Air Quality Sensor BME688](https://soldered.com/products/bme688-environmental-sensor?_pos=1&_psq=bme688&_psid=fa865b0a3&_ss=e)                      |
 
 
 The Bosch BME688 Sensor Breakout Board by Soldered is a compact and versatile environmental sensor module designed for easy integration into various projects. It features the Bosch BME688, a powerful sensor capable of measuring temperature, humidity, pressure, and gas (air quality) with high precision. The board supports both I2C communication via standard pins and a Qwiic connector for seamless, solder-free connectivity with other Qwiic-enabled devices. This makes it ideal for prototyping and development in IoT, weather monitoring, and air quality sensing applications.
@@ -18,11 +18,11 @@ The Bosch BME688 Sensor Breakout Board by Soldered is a compact and versatile en
 
 ### Hardware design
 
-You can find hardware design for this board in _NAZIV PROIZVODA_ hardware repository.
+You can find hardware design for this board in _Soldered BME688 Sensor_ hardware repository.
 
 ### Documentation
 
-Access Arduino library documentation [here](https://SolderedElectronics.github.io/Soldered-Generic-Arduino-Library/).
+Access Arduino library documentation [here]([https://SolderedElectronics.github.io/Soldered-Generic-Arduino-Library/](https://docs.soldered.com/bme688/overview/)).
 
 - Tutorial for using the BME688 sensor breakout board
 - Installing an Arduino library
