@@ -43,17 +43,16 @@ void setup(void)
 	// Set the default configuration for temperature, pressure and humidity 
 	bme.setTPH();
 
-	// Set the heater configuration to 300 deg C for 100ms for Forced mode 
-	bme.setHeaterProf(300, 100);
+	// Set the heater configuration to 300 deg C for 10ms for Forced mode 
+	bme.setHeaterProf(300, 10);
 
 	Serial.println("TimeStamp(ms), Temperature(deg C), Pressure(Pa), Humidity(%), Gas resistance(ohm), Status");
 }
 
 void loop(void)
 {
-    //Set the BME into forced operating mode
+  //Set the BME into forced operating mode
 	bme.setOpMode(BME68X_FORCED_MODE);
-	delayMicroseconds(bme.getMeasDur());
 
     // See if there's data available from the sensor
 	if (bme.fetchData())
@@ -66,4 +65,5 @@ void loop(void)
 		Serial.print(String(data.gas_resistance) + ", ");
 		Serial.println(data.status, HEX);
 	}
+	delay(500);
 }
