@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['open_20source_20license_0',['Open-source license',['../index.html#autotoc_md7',1,'']]],
-  ['operation_20mode_1',['Operation mode',['../group__bme68x_api_om.html',1,'']]],
-  ['original_20source_2',['Original source',['../index.html#autotoc_md6',1,'']]],
-  ['out_3',['Data Read out',['../group__bme68x_api_data.html',1,'']]],
-  ['overview_4',['Sensor Overview',['../dir_af8d0db5c2a7634e45bbb7d7f542552a.html#autotoc_md10',1,'']]]
+  ['nfields_0',['nFields',['../class_bme68x.html#a75132113c7977e8fa333c3ad81e04b8c',1,'Bme68x']]],
+  ['null_5fptr_5fcheck_1',['null_ptr_check',['../bme68x_8c.html#aeaaff98c8fd149e2e36616cb572952e2',1,'bme68x.c']]]
 ];

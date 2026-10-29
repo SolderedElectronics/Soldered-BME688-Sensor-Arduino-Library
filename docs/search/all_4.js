@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['features_0',['Features',['../dir_af8d0db5c2a7634e45bbb7d7f542552a.html#autotoc_md11',1,'']]],
-  ['fetchdata_1',['fetchData',['../class_bme68x.html#a966f1fe93741fafe3d71f5bd43794ef2',1,'Bme68x']]],
-  ['fun_2',['Have fun!',['../index.html#autotoc_md8',1,'']]]
+  ['data_20read_20out_0',['Data Read out',['../group__bme68x_api_data.html',1,'']]],
+  ['design_1',['Hardware design',['../index.html#autotoc_md2',1,'']]],
+  ['documentation_2',['Documentation',['../index.html#autotoc_md3',1,'']]]
 ];

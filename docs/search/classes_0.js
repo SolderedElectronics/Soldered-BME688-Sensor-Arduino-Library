@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['bme688_0',['BME688',['../class_b_m_e688.html',1,'']]],
-  ['bme688data_1',['BME688Data',['../class_b_m_e688_data.html',1,'']]],
-  ['bme68x_2',['Bme68x',['../class_bme68x.html',1,'']]],
-  ['bme68xscommt_3',['bme68xScommT',['../unionbme68x_scomm_t.html',1,'']]]
+  ['_5bstruct_5d_2ei2c_0',['[struct].i2c',['../structbme68x_scomm_t_1_1_0fstruct_0e_8i2c.html',1,'bme68xScommT']]],
+  ['_5bstruct_5d_2espi_1',['[struct].spi',['../structbme68x_scomm_t_1_1_0fstruct_0e_8spi.html',1,'bme68xScommT']]]
 ];
