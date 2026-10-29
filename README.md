@@ -3,7 +3,7 @@
 [![Make docs and publish to GitHub Pages](https://github.com/SolderedElectronics/Soldered-Generic-Arduino-Library/actions/workflows/make_docs.yml/badge.svg?branch=dev)](https://github.com/SolderedElectronics/Soldered-Generic-Arduino-Library/actions/workflows/make_docs.yml)
 [![Arduino Library Manager Compatibility](https://github.com/SolderedElectronics/Soldered-Generic-Arduino-Library/actions/workflows/arduino_lint.yml/badge.svg?branch=dev)](https://github.com/SolderedElectronics/Soldered-Generic-Arduino-Library/actions/workflows/arduino_lint.yml)
 
-| ![Environmental & Air Quality Sensor BME688]([https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg](https://soldered.com/cdn/shop/files/333203_featured-photo_ce08e8_dbb5be5b-340a-49e7-a551-b315fa7f5576.jpg)) |
+| ![Environmental & Air Quality Sensor BME688](https://soldered.com/cdn/shop/files/333203_featured-photo_ce08e8_dbb5be5b-340a-49e7-a551-b315fa7f5576.jpg) |
 | :------------------------------------------------------------------------------------: |
 |                      [Environmental & Air Quality Sensor BME688](https://soldered.com/products/bme688-environmental-sensor?_pos=1&_psq=bme688&_psid=fa865b0a3&_ss=e)                      |
 
